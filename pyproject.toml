@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "s3_version_cleaner"
+requires-python = ">=3.10"
+version = "0.0.1"
+dependencies = [
+    "boto3==1.26.7",
+]
+
+[project.scripts]
+s3-version-cleaner = "s3_version_cleaner.commands:main"
